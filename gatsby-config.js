@@ -2,5 +2,5 @@ module.exports = {
   siteMetadata: {
     siteUrl: 'https://thomasjamesfrancis.com/'
   },
-  plugins: []
+  plugins: ['gatsby-plugin-postcss']
 };

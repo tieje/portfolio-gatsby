@@ -13,13 +13,27 @@ Alright, I'm back. Let's get a template and get started.
 
 2/11/2022
 Well, that was a long break.
-#0. Plan out how you're going to build the site.
-#1. Design the website with Figma. You'll want to showcase your original Figma design on your portfolio site.
-#2. Build HTML + CSS components that are reactive to screen size.
-#3. Add animation? with Animxyz?
++ Plan out what technologies you'll use to build the site.
+- Design the website with Figma.
+    # You'll want to showcase your original Figma design on your portfolio site.
+- Build HTML + CSS components that are reactive to screen size.
+- Add animation? with Animxyz?
 
 HTML
 Tailwind - Styling
 Animxyz - animation
 Gatsby - Hosting and template
 
+2/12/2022
++ set up gatsby, gatsby cloud, and tailwind css
+    + It turns out a developer created the plugin for gatsby but it's recognized yet
+    + tailwind css uses postcss
+
+I've realized that the actual start of the project is:
+
+#1. Figure out or set up building process.
+
+
+2/12/2022
+- get tailwind css intellisense working on vscode
+- design the website on Figma
