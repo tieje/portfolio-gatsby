@@ -1,0 +1,25 @@
+12/9/2021
+I will be building a static portfolio website with Gatsby.
++ install the Gatsby cli
+    https://www.gatsbyjs.com/docs/reference/gatsby-cli/
+    + sudo npm install -g gatsby-cli
+
+Gatsby Tutorials
+https://www.gatsbyjs.com/docs/tutorial/part-0/
+https://www.gatsbyjs.com/docs/tutorial/part-1/
+
+12/18/2021
+Alright, I'm back. Let's get a template and get started.
+
+2/11/2022
+Well, that was a long break.
+#0. Plan out how you're going to build the site.
+#1. Design the website with Figma. You'll want to showcase your original Figma design on your portfolio site.
+#2. Build HTML + CSS components that are reactive to screen size.
+#3. Add animation? with Animxyz?
+
+HTML
+Tailwind - Styling
+Animxyz - animation
+Gatsby - Hosting and template
+
