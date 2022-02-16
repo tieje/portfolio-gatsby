@@ -11,7 +11,7 @@ const IndexPage = () => {
       </p>
       <ul>
         <li>
-          <a href="text-decoration-none">
+          <a href="https://github.com/tieje/portfolio-gatsby">
             Check out the progress at my github!
           </a>
         </li>

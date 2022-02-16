@@ -35,5 +35,21 @@ I've realized that the actual start of the project is:
 
 
 2/12/2022
-- get tailwind css intellisense working on vscode
-- design the website on Figma
++ get tailwind css intellisense working on vscode
+- design the website on Figma and showcase the design on your README
+    - design the homepage
+        - desktop
+        - tablet
+        - mobile
+    - design a project component and what it will look like
+        - desktop
+        - tablet
+        - mobile
+    - Add footer component
+
+
+https://tailwindui.com/#product-marketing
+
+
+- fix your README
+
