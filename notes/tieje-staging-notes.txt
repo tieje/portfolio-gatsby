@@ -38,7 +38,7 @@ I've realized that the actual start of the project is:
 + get tailwind css intellisense working on vscode
 - design the website on Figma and showcase the design on your README
     - design the homepage
-        - desktop
+        + desktop - 2/16/2022
         - tablet
         - mobile
     - design a project component and what it will look like
