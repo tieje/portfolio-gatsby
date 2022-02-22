@@ -36,20 +36,20 @@ I've realized that the actual start of the project is:
 
 2/12/2022
 + get tailwind css intellisense working on vscode
-- design the website on Figma and showcase the design on your README
-    - design the homepage
-        + desktop - 2/16/2022
-        - tablet
-        - mobile
-    - design a project component and what it will look like
-        - desktop
-        - tablet
-        - mobile
-    - Add footer component
++ design the website on Figma and showcase the design on your README
+    + design the homepage
+        + desktop + tablet - 2/16/2022
+        ~ mobile - 2/18/2022
+            The mobile version will be the same thing but the sticky menu will minimize to a button and will pull to the right covering half the screen.
+    + design a project component and what it will look like
+        + desktop + tablet - 2/18/2022
+    + Add footer component - 2/18/2022
 
+
+- switch the project over to typescript for Gatsby
+- build static version of website
+- fix your README
 
 https://tailwindui.com/#product-marketing
 
-
-- fix your README
 
