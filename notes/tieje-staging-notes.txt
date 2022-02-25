@@ -46,10 +46,18 @@ I've realized that the actual start of the project is:
     + Add footer component - 2/18/2022
 
 
-- switch the project over to typescript for Gatsby
++ switch the project over to typescript for Gatsby
+
+2/24/2022
+
+In order to use images in Gatsby, it looks like you'll need to use their image loader.
+Who am I to complain? They're hosting my site for free.
+https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-plugin-image
+
+
+https://tailwindui.com/#product-marketing
 - build static version of website
 - fix your README
 
-https://tailwindui.com/#product-marketing
 
 
