@@ -6,11 +6,11 @@ export const HomeMain = () => {
             <h1>
                 main
             </h1>
-            <PortfolioProject />
         </main>
     )
 }
-/*h-screen bg-green md:pr-60*/
+/*h-screen bg-green md:pr-60
 const PortfolioProject = () => {
 
 }
+*/

@@ -1,0 +1,91 @@
+[
+  {
+    "id": 1,
+    "title": "semblance.us",
+    "description": "The purpose of this project is to encourage people to meet others locally, in-person through the gamification of story archetypes and narrative choices.",
+    "skills": [
+      "React",
+      "Apollo",
+      "Django",
+      "REST APIs",
+      "Docker Swarm",
+      "PostgreSQL db"
+    ],
+    "link": "http://semblance.us/"
+  },
+  {
+    "id": 2,
+    "title": "Smiling School",
+    "description": "This is a project for school in which students were tasked with replicating a website designed in Figma and then were later asked to add simple functionality.",
+    "skills": ["Bootstrap", "JQuery"],
+    "link": "https://github.com/tieje/holberton-smiling-school-javascript"
+  },
+  {
+    "id": 3,
+    "title": "Frontend School Projects",
+    "description": "This repository contains various frontend projects completed for school.",
+    "skills": [
+      "Bootstrap",
+      "JQuery",
+      "Cookies",
+      "Local Storage",
+      "Sass",
+      "Developer Tools"
+    ],
+    "link": "https://github.com/tieje/holbertonschool-web_front_end"
+  },
+  {
+    "id": 4,
+    "title": "Backend School Projects",
+    "description": "This repository contains various backend projects completed for school.",
+    "skills": [
+      "Python Async/Await",
+      "Python Annotations",
+      "Caching",
+      "Pagination",
+      "Authentication"
+    ],
+    "link": "https://github.com/tieje/holbertonschool-web_back_end"
+  },
+  {
+    "id": 5,
+    "title": "Gates of Shell",
+    "description": "This is a project for school in which students were tasked with coding a simple unix shell in the C programming language. All functions were made from scratch with a box of scraps.",
+    "skills": ["C", "grit"],
+    "link": "https://github.com/nelsfichera/simple_shell/graphs/contributors"
+  },
+  {
+    "id": 6,
+    "title": "Stock Trading Bot",
+    "description": "Fun challenge. If you're a developer, I feel like you need to have tried this once.",
+    "skills": [
+      "C#",
+      "Alpaca API",
+      "Academic Research",
+      "SQLite db",
+      "Selenium"
+    ],
+    "link": "https://github.com/tieje/csharp-trading-bot"
+  },
+  {
+    "id": 7,
+    "title": "Simple Lead Generator",
+    "description": "The purpose of this script is to provide a GUI for scraping emails, phone numbers, and contact urls from the top result of duckduckgo from a list of business names in an excel sheet. ",
+    "skills": ["PySimpleGUI", "Python", "xlwings", "Selenium"],
+    "link": "https://github.com/tieje/Simple-Lead-Generator"
+  },
+  {
+    "id": 8,
+    "title": "This Website!",
+    "description": "The main purpose of this website is to market myself to potential employers.",
+    "skills": [
+      "Gatsby",
+      "TailwindCSS",
+      "HTML",
+      "TypeScript",
+      "JavaScript",
+      "Figma"
+    ],
+    "link": "https://github.com/tieje/portfolio-gatsby"
+  }
+]

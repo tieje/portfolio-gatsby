@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export const HomeHeader = () => {
     return (
-        <header id="home" className="grid place-content-center md:pr-60 z-0 bg-pink h-screen">
+        <header id="home" className="grid place-content-center z-0 bg-pink h-screen">
             <IntroCard />
         </header>
     )
@@ -21,7 +21,7 @@ const IntroCard = () => {
             <h1 className="grid place-content-center text-2xl">
                 Thomas Francis
             </h1>
-            <button className="text-white bg-orangeRed opacity-60 rounded-md text-xl mx-10 h-10">
+            <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md text-xl mx-10 h-10 shadow-md">
                 Fullstack Web Developer
             </button>
         </div>

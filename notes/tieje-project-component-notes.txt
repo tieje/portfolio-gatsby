@@ -1,0 +1,22 @@
+2/25/2022
+
++ update the SideNavBar to be anchored to the right
+
+- create the project component
+    + determine if you need to use the graphql backend to store and retrieve data - I probably do.
+    + convert data to json
+    + add json data to graphql using gatsby file system
+    + add graphql data to navbar
+    x update gatsby-config file to include images folder
+    + update json for all relevant information
+        + description
+        + key skills
+    + figure out the general layout and max width
+        + I'm just going to keep everything center for simplicity sake.
+    + collect pictures
+    - create the project component card
+        - picture
+        - Title
+        - Summary
+        - Key Skills
+    - make some nice animation for this website

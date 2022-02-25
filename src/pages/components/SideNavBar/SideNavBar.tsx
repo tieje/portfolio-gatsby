@@ -1,33 +1,40 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { nanoid } from "nanoid"
 
-const TopItems: string[] = [
+const GenericItems: string[] = [
     'home',
     'resumé',
     'symbols',
 ]
-const BottomItems: string[] = [
-    'semblance.us',
-    'Holberton Headphones',
-    'Frontend School Projects',
-    'Backend School Projects',
-    'Gates of Shell',
-    'Stock Trading Bot',
-    'Simple Lead Generator',
-    'Broker Checker',
-    'This Website!'
-]
 
+type Node = {
+    title: string
+}
+type projectNode = {
+    node: Node
+}
 
 export const SideNavBar = () => {
+    const projectTitles = useStaticQuery(graphql`query ProjectTitles {
+        allProjectsJson {
+          edges {
+            node {
+              title
+            }
+          }
+        }
+      }`
+    )
     return (
-        <nav className="bg-lightPink fixed left-0 md:w-3/12 w-3/4 h-screen z-10 top-0 content-center md:visible invisible">
-            <ul className="grid md:gap-4 gap-2 grid-rows place-content-center h-full">
-                {TopItems.map((item: string) => {
-                    return <SideNavBarItem item={item} />
+        <nav className="bg-lightPink fixed left-0 md:w-3/12 w-3/4 h-screen z-10 top-0 md:visible invisible">
+            <ul className="grid md:gap-4 gap-2 grid-rows content-center h-full px-10">
+                {GenericItems.map((item: string) => {
+                    return <SideNavBarItem key={nanoid()} item={item} />
                 })}
                 <hr></hr>
-                {BottomItems.map((item: string) => {
-                    return <SideNavBarItem item={item} />
+                {projectTitles.allProjectsJson.edges.map((item: projectNode) => {
+                    return <SideNavBarItem key={nanoid()} item={item.node.title} />
                 })}
             </ul>
         </nav>
@@ -35,7 +42,7 @@ export const SideNavBar = () => {
 }
 
 const SideNavBarItem = ({ item }: { item: string }) => {
-    const ref = '#' + item.toLowerCase().replace(/ /g, '-')
+    const ref = '#' + item.toLowerCase().replace(/[ \.\\]/g, '-')
     return (
         <li className="text-right">
             <a href={ref}>
