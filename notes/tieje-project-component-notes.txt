@@ -14,9 +14,17 @@
     + figure out the general layout and max width
         + I'm just going to keep everything center for simplicity sake.
     + collect pictures
+    + collect icons
+        linkedin
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by IconsBox - Flaticon</a>
+        github
+            <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
+    + create footer
+    - figure out GatsbyImage Component
     - create the project component card
         - picture
         - Title
         - Summary
         - Key Skills
     - make some nice animation for this website
+
