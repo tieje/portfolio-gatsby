@@ -21,6 +21,9 @@
             <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
     + create footer
     - figure out GatsbyImage Component
+        https://www.gatsbyjs.com/plugins/gatsby-plugin-image
+        https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/
+        https://dev.to/lukekyl/how-to-query-gatsby-images-with-graphql-n3f
     - create the project component card
         - picture
         - Title

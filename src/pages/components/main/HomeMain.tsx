@@ -9,33 +9,31 @@ export const HomeMain = () => {
     const projectData = useStaticQuery(graphql`
         query projectData {
             allProjectsJson {
-                edges {
-                    node {
-                        id,
-                        title,
-                        description,
-                        link,
-                        image
-                    }
+                nodes {
+                    id,
+                    title,
+                    description,
+                    link,
+                    image
                 }
             }
         }
     `)
     return (
         <main className="z-0 grid">
-            {projectData.allProjectsJson.edges.map((edge: projectNode) => {
-                return <PortfolioProject key={nanoid()} node={edge.node} />
+            {projectData.allProjectsJson.nodes.map((node: jsonNode) => {
+                return <PortfolioProject key={nanoid()} node={node} />
             })}
         </main>
     )
 }
 
 const PortfolioProject = ({ node }: { node: jsonNode }) => {
-    const imgSrc: string = (node.image) ? "../../../images/" + node.image : ''
     const idHTMLAttr: string = (node.title) ? CreateIdTag(node.title) : ''
     const description: string = (node.description) ? node.description : ''
     const title: string = (node.title) ? node.title : ''
     const link: string = (node.link) ? node.link : '#'
+
     return (
         <div id={idHTMLAttr} className="h-screen bg-green grid w-screen place-content-center">
             <div className="grid md:gap-4 gap-3 place-content-center px-5 md:px-0 md:max-w-md">
