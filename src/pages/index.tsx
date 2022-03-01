@@ -1,9 +1,9 @@
 import React from "react"
-import { HomeHeader, } from './components/HomeHeader'
-import { HomeMain } from './components/HomeMain'
-import { SideNavBar } from './components/SideNavBar'
-/*import { HomeFooter } from './components/HomeFooter'
-*/
+import { HomeHeader, } from '../components/HomeHeader'
+import { HomeMain } from '../components/HomeMain'
+import { SideNavBar } from '../components/SideNavBar'
+import { HomeFooter } from '../components/HomeFooter'
+
 
 const IndexPage = () => {
   return (
@@ -11,6 +11,7 @@ const IndexPage = () => {
       <SideNavBar />
       <HomeHeader />
       <HomeMain />
+      <HomeFooter />
     </body>
   );
 };

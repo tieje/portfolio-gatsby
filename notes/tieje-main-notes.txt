@@ -1,0 +1,8 @@
+3/1/2022
+I'm running into the following problem for setting up in Gatsby cloud.
+A page component must export a React component for it to be valid
+https://nodachisoft.com/common/en/article/en000108/
+This says that only pages are allowed under the pages folder.
+Moving files solved the problem, so I'm going to move components folder
+out of the pages folder.
+

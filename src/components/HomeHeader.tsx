@@ -13,7 +13,7 @@ const IntroCard = () => {
     return (
         <div className="grid grid-cols-1 gap-2">
             <StaticImage
-                src="../../images/best.jpeg"
+                src="../images/best.jpeg"
                 alt="my_profile"
                 height={500}
                 className="rounded-lg"
