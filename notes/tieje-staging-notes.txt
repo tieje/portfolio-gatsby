@@ -59,5 +59,9 @@ https://tailwindui.com/#product-marketing
 - build static version of website
 - fix your README
 
+3/1/2022
 
+- allow users to download resume
+- Fullstack button directs users to the next section
+- make some nice animation for this website
 
