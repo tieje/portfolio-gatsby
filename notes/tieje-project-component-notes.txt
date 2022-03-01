@@ -24,10 +24,13 @@
         https://www.gatsbyjs.com/plugins/gatsby-plugin-image
         https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/
         https://dev.to/lukekyl/how-to-query-gatsby-images-with-graphql-n3f
+        https://andrelandgraf.medium.com/how-to-use-gatsby-image-for-a-set-of-images-c17906956e4b
+          I have decided that the best implementation for my small site is to simply query everything once and provide it to everything.
+          Gatsby forces me to grab everything all at once in one query...
+          - look in the React Context solution. Grab all the data at once and make it globally available like Apollo
     - create the project component card
         - picture
         - Title
         - Summary
         - Key Skills
     - make some nice animation for this website
-
