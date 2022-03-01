@@ -12,15 +12,15 @@
       "PostgreSQL db"
     ],
     "link": "http://semblance.us/",
-    "image": "semblance.png"
+    "image": "../images/semblance.png"
   },
   {
     "id": 2,
     "title": "Smiling School",
-    "description": "This is a project for school in which students were tasked with replicating a website designed in Figma and then were later asked to add simple functionality.",
+    "description": "This is a project for school in which students were tasked with replicating a website designed in Figma and were later asked to add simple functionality.",
     "skills": ["Bootstrap", "JQuery"],
     "link": "https://github.com/tieje/holberton-smiling-school-javascript",
-    "image": "smiling-school.png"
+    "image": "../images/smiling-school.png"
   },
   {
     "id": 3,
@@ -32,10 +32,10 @@
       "Cookies",
       "Local Storage",
       "Sass",
-      "Developer Tools"
+      "Figma"
     ],
     "link": "https://github.com/tieje/holbertonschool-web_front_end",
-    "image": "frontend-projects.png"
+    "image": "../images/frontend-projects.png"
   },
   {
     "id": 4,
@@ -49,15 +49,15 @@
       "Authentication"
     ],
     "link": "https://github.com/tieje/holbertonschool-web_back_end",
-    "image": "backend-projects.png"
+    "image": "../images/backend_projects.png"
   },
   {
     "id": 5,
     "title": "Gates of Shell",
     "description": "This is a project for school in which students were tasked with coding a simple unix shell in the C programming language. All functions were made from scratch with a box of scraps.",
-    "skills": ["C", "grit"],
+    "skills": ["C", "grit/sheer will"],
     "link": "https://github.com/nelsfichera/simple_shell/graphs/contributors",
-    "image": "simple_shell.png"
+    "image": "../images/simple_shell.jpeg"
   },
   {
     "id": 6,
@@ -71,7 +71,7 @@
       "Selenium"
     ],
     "link": "https://github.com/tieje/csharp-trading-bot",
-    "image": "trading-bot.png"
+    "image": "../images/trading-bot.png"
   },
   {
     "id": 7,
@@ -79,7 +79,7 @@
     "description": "The purpose of this script is to provide a GUI for scraping emails, phone numbers, and contact urls from the top result of duckduckgo from a list of business names in an excel sheet. ",
     "skills": ["PySimpleGUI", "Python", "xlwings", "Selenium"],
     "link": "https://github.com/tieje/Simple-Lead-Generator",
-    "image": "lead-generator.png"
+    "image": "../images/lead-generator.png"
   },
   {
     "id": 8,
@@ -90,7 +90,6 @@
       "TailwindCSS",
       "HTML",
       "TypeScript",
-      "JavaScript",
       "Figma"
     ],
     "link": "https://github.com/tieje/portfolio-gatsby"

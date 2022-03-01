@@ -1,10 +1,15 @@
-export type jsonNode = {
+type jsonNode = {
         id?: string;
         title?: string;
         description?: string;
         link?: string;
-        image?: string;
+        image?: any;
+        skills?: string[]
     }
-export type projectNode = {
+type projectNode = {
     node: jsonNode;
+}
+export {
+    jsonNode,
+    projectNode
 }

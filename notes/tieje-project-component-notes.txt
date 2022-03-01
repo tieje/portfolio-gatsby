@@ -20,17 +20,26 @@
         github
             <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Dave Gandy - Flaticon</a>
     + create footer
-    - figure out GatsbyImage Component
+    + figure out GatsbyImage Component
         https://www.gatsbyjs.com/plugins/gatsby-plugin-image
         https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/
         https://dev.to/lukekyl/how-to-query-gatsby-images-with-graphql-n3f
         https://andrelandgraf.medium.com/how-to-use-gatsby-image-for-a-set-of-images-c17906956e4b
+        https://andrelandgraf.medium.com/how-to-use-gatsby-plugin-image-for-dynamic-images-90aafb927ed8
+        https://contactmentor.com/react-createcontext-example/
+        https://reactjs.org/docs/context.html
           I have decided that the best implementation for my small site is to simply query everything once and provide it to everything.
           Gatsby forces me to grab everything all at once in one query...
-          - look in the React Context solution. Grab all the data at once and make it globally available like Apollo
-    - create the project component card
-        - picture
-        - Title
-        - Summary
-        - Key Skills
+          x look in the React Context solution. Grab all the data at once and make it globally available like Apollo
+            The context solution is too complex and I don't really know what I'm doing.
+        + try creating a graphql query that grabs the correct image
+            https://stackoverflow.com/questions/52574783/gatsby-image-path-from-
+            All I had to do was fix the json string for the image
+    + create the project component card
+        + picture
+        + Title
+        + Summary
+        + Key Skills
+    - fix color expression of website
     - make some nice animation for this website
+    

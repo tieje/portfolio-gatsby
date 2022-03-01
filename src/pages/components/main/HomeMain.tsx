@@ -1,27 +1,31 @@
-/* import { GatsbyImage, getImage } from "gatsby-plugin-image" */
-import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { nanoid } from "nanoid"
-import { CreateIdTag } from "../../../utils/functions"
+import { CreateIdTag, RandomInt } from "../../../utils/functions"
 import { jsonNode } from "../../../types/CommonTypes"
+
+const randomColors = {
+    1: 'purple',
+    2: 'orange',
+    3: 'green',
+    4: 'lightBlue',
+    5: 'yellow',
+}
 
 export const HomeMain = () => {
     const projectData = useStaticQuery(graphql`
     query projectData {
-        allFile {
-          edges {
-            node {
-              relativePath
-              childrenImageSharp {
-                id
-                gatsbyImageData
-              }
-              childrenProjectsJson {
-                id
-                description
-                skills
-                title
-                image
+        allProjectsJson {
+          nodes {
+            id
+            title
+            description
+            link
+            skills
+            image {
+              childImageSharp {
+                gatsbyImageData(height: 300, placeholder: BLURRED)
               }
             }
           }
@@ -30,22 +34,26 @@ export const HomeMain = () => {
     `)
     return (
         <main className="z-0 grid">
-            {projectData.allFile.edges.node.map((node: jsonNode) => {
-                return <PortfolioProject key={nanoid()} node={node} images={projectData.allImageSharp.nodes} />
+            {projectData.allProjectsJson.nodes.map((node: jsonNode) => {
+                return <PortfolioProject key={nanoid()} node={node} />
             })}
         </main>
     )
 }
 
-const PortfolioProject = ({ node, images }) => {
+const PortfolioProject = ({ node }: { node: jsonNode }) => {
+    const color: string = randomColors[RandomInt(1,5)]
+    const TopClassNameProperties = "h-screen grid w-screen place-content-center bg-" + color
     const idHTMLAttr: string = (node.title) ? CreateIdTag(node.title) : ''
     const description: string = (node.description) ? node.description : ''
     const title: string = (node.title) ? node.title : ''
     const link: string = (node.link) ? node.link : '#'
+    const image = getImage(node.image)
+    const sample: string[] = ['skill', 'skill', 'skill', 'skill', 'skill', 'skill']
     return (
-        <div id={idHTMLAttr} className="h-screen bg-green grid w-screen place-content-center">
+        <div id={idHTMLAttr} className={TopClassNameProperties}>
             <div className="grid md:gap-4 gap-3 place-content-center px-5 md:px-0 md:max-w-md">
-                <div>picture placeholder</div>
+                <GatsbyImage image={image} alt={title} />
                 <div className="grid justify-center">
                     <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md md:text-xl text-md md:h-10 w-full px-2 shadow-md">
                         <a href={link} title={title}>
@@ -64,41 +72,20 @@ const PortfolioProject = ({ node, images }) => {
                         {description}
                     </p>
                 </article>
+                <ul className="bg-white rounded-lg grid grid-cols-2 place-content-center">
+                    {node.skills.map((skill: string) => {
+                        return (<PortfolioSkill skill={skill} />)
+                    })}
+                </ul>
             </div>
         </div>
     )
 }
 
-/*
-const PortfolioProject = ({ node }: { node: jsonNode }) => {
-    const idHTMLAttr: string = (node.title) ? CreateIdTag(node.title) : ''
-    const description: string = (node.description) ? node.description : ''
-    const title: string = (node.title) ? node.title : ''
-    const link: string = (node.link) ? node.link : '#'
+const PortfolioSkill = ({ skill }: { skill: string }) => {
     return (
-        <div id={idHTMLAttr} className="h-screen bg-green grid w-screen place-content-center">
-            <div className="grid md:gap-4 gap-3 place-content-center px-5 md:px-0 md:max-w-md">
-                <div>picture placeholder</div>
-                <div className="grid justify-center">
-                    <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md md:text-xl text-md md:h-10 w-full px-2 shadow-md">
-                        <a href={link} title={title}>
-                            Go to Site
-                        </a>
-                    </button>
-                </div>
-                <div>
-                    <h1 className="md:text-xl">
-                        {node.title}
-                    </h1>
-                </div>
-                <hr></hr>
-                <article>
-                    <p className="indent-5">
-                        {description}
-                    </p>
-                </article>
-            </div>
-        </div>
+        <li className="px-5 py-3">
+            {skill}
+        </li>
     )
 }
-*/
