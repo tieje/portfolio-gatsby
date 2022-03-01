@@ -1,13 +1,13 @@
 import React from "react"
-import { HomeHeader } from './components/header/HomeHeader'
-import { HomeMain } from './components/main/HomeMain'
+import { HomeHeader, } from './components/HomeHeader'
+import { HomeMain } from './components/HomeMain'
 import { HomeFooter } from './components/HomeFooter'
-import { SideNavBar } from './components/SideNavBar/SideNavBar'
+import { SideNavBar } from './components/SideNavBar'
 
 
 const IndexPage = () => {
   return (
-    <body>
+    <body className="scroll-smooth">
       <SideNavBar />
       <HomeHeader />
       <HomeMain />

@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export const HomeHeader = () => {
     return (
-        <header id="home" className="grid place-content-center z-0 bg-pink h-screen">
+        <header id="home" className="grid place-content-center z-0 bg-lightBlue h-screen">
             <IntroCard />
         </header>
     )
@@ -13,7 +13,7 @@ const IntroCard = () => {
     return (
         <div className="grid grid-cols-1 gap-2">
             <StaticImage
-                src="../../../images/best.jpeg"
+                src="../../images/best.jpeg"
                 alt="my_profile"
                 height={500}
                 className="rounded-lg"

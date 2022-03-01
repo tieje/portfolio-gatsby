@@ -39,7 +39,4 @@
         + picture
         + Title
         + Summary
-        + Key Skills
-    - fix color expression of website
-    - make some nice animation for this website
-    
+        + Key Skills    

@@ -2,15 +2,15 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { nanoid } from "nanoid"
-import { CreateIdTag, RandomInt } from "../../../utils/functions"
-import { jsonNode } from "../../../types/CommonTypes"
+import { CreateIdTag, RandomInt } from "./utils/functions"
+import { jsonNode } from "./types/CommonTypes"
 
 const randomColors = {
     1: 'purple',
     2: 'orange',
     3: 'green',
     4: 'lightBlue',
-    5: 'yellow',
+    5: 'yellow'
 }
 
 export const HomeMain = () => {
@@ -41,15 +41,16 @@ export const HomeMain = () => {
     )
 }
 
+/* const color: string = randomColors[RandomInt(1,5)]
+*/
 const PortfolioProject = ({ node }: { node: jsonNode }) => {
-    const color: string = randomColors[RandomInt(1,5)]
+    const color: string = 'lightBlue'
     const TopClassNameProperties = "h-screen grid w-screen place-content-center bg-" + color
     const idHTMLAttr: string = (node.title) ? CreateIdTag(node.title) : ''
     const description: string = (node.description) ? node.description : ''
     const title: string = (node.title) ? node.title : ''
     const link: string = (node.link) ? node.link : '#'
     const image = getImage(node.image)
-    const sample: string[] = ['skill', 'skill', 'skill', 'skill', 'skill', 'skill']
     return (
         <div id={idHTMLAttr} className={TopClassNameProperties}>
             <div className="grid md:gap-4 gap-3 place-content-center px-5 md:px-0 md:max-w-md">
@@ -74,7 +75,7 @@ const PortfolioProject = ({ node }: { node: jsonNode }) => {
                 </article>
                 <ul className="bg-white rounded-lg grid grid-cols-2 place-content-center">
                     {node.skills.map((skill: string) => {
-                        return (<PortfolioSkill skill={skill} />)
+                        return (<PortfolioSkill key={nanoid()} skill={skill} />)
                     })}
                 </ul>
             </div>

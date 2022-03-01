@@ -2,8 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { nanoid } from "nanoid"
 import { StaticImage } from "gatsby-plugin-image"
-import { CreateIdTag } from "../../../utils/functions"
-import { projectNode } from "../../../types/CommonTypes"
+import { CreateIdTag } from "./utils/functions"
+import { projectNode } from "./types/CommonTypes"
 
 const GenericItems: string[] = [
     'home',
@@ -30,7 +30,7 @@ export const SideNavBar = () => {
                 <li className="text-right">
                     <a href="https://github.com/tieje" title="Created by Dave Gandy - Flaticon">
                         <StaticImage
-                            src="../../../images/github-character.png"
+                            src="../../images/github-character.png"
                             alt="github icon by Dave Gandy"
                             width={35}
                             height={35}
@@ -42,7 +42,7 @@ export const SideNavBar = () => {
                         className="pl-2"
                     >
                         <StaticImage
-                            src="../../../images/linkedin.png"
+                            src="../../images/linkedin.png"
                             alt="linkedin icon created by IconsBox - Flaticon"
                             width={35}
                             height={35}

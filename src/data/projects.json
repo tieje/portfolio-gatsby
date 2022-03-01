@@ -90,7 +90,8 @@
       "TailwindCSS",
       "HTML",
       "TypeScript",
-      "Figma"
+      "Figma",
+      "Gatsby Cloud"
     ],
     "link": "https://github.com/tieje/portfolio-gatsby"
   }
