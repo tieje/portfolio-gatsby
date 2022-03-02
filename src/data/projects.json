@@ -55,7 +55,7 @@
     "id": 5,
     "title": "Gates of Shell",
     "description": "This is a project for school in which students were tasked with coding a simple unix shell in the C programming language. All functions were made from scratch with a box of scraps.",
-    "skills": ["C", "grit/sheer will"],
+    "skills": ["C", "grit / sheer will"],
     "link": "https://github.com/nelsfichera/simple_shell/graphs/contributors",
     "image": "../images/simple_shell.jpeg"
   },

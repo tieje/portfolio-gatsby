@@ -22,7 +22,9 @@ const IntroCard = () => {
                 Thomas Francis
             </h1>
             <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md text-xl mx-10 h-10 shadow-md">
-                Fullstack Web Developer
+                <a href="#semblance-us">
+                    Fullstack Web Developer
+                </a>
             </button>
         </div>
     )

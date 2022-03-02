@@ -73,6 +73,11 @@ const PortfolioProject = ({ node }: { node: jsonNode }) => {
                         {description}
                     </p>
                 </article>
+                <div>
+                    <h1 className="md:text-xl">
+                        Key Skills
+                    </h1>
+                </div>
                 <ul className="bg-white rounded-lg grid grid-cols-2 place-content-center">
                     {node.skills.map((skill: string) => {
                         return (<PortfolioSkill key={nanoid()} skill={skill} />)

@@ -5,13 +5,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import { CreateIdTag } from "./utils/functions"
 import { projectNode } from "./types/CommonTypes"
 
-const GenericItems: string[] = [
-    'home',
-    'resumé',
-]
-
 export const SideNavBar = () => {
-    const projectTitles = useStaticQuery(graphql`query ProjectTitles {
+    const projectTitles = useStaticQuery(graphql`
+    query ProjectTitles {
         allProjectsJson {
           edges {
             node {
@@ -19,14 +15,29 @@ export const SideNavBar = () => {
             }
           }
         }
-      }`
-    )
+        allFile(filter: {extension: {eq: "pdf"}}) {
+          edges {
+            node {
+              publicURL
+              name
+            }
+          }
+        }
+      }
+    `)
     return (
         <nav className="bg-lightPink fixed left-0 md:w-3/12 w-3/4 h-screen z-10 top-0 md:visible invisible">
             <ul className="grid md:gap-4 gap-2 grid-rows content-center h-full px-10">
-                {GenericItems.map((item: string) => {
-                    return <SideNavBarItem key={nanoid()} item={item} />
-                })}
+                <li className="text-right">
+                    <a href="#home">
+                        home
+                    </a>
+                </li>
+                <li className="text-right">
+                    <a href={projectTitles.allFile.edges[0].node.publicURL} download>
+                        resumé
+                    </a>
+                </li>
                 <li className="text-right">
                     <a href="https://github.com/tieje" title="Created by Dave Gandy - Flaticon">
                         <StaticImage
