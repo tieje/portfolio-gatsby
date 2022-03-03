@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 export const HomeHeader = () => {
@@ -10,6 +11,18 @@ export const HomeHeader = () => {
 }
 
 const IntroCard = () => {
+    const resume = useStaticQuery(graphql`
+    query resume {
+        allFile(filter: {extension: {eq: "pdf"}}) {
+          edges {
+            node {
+              publicURL
+              name
+            }
+          }
+        }
+      }
+    `)
     return (
         <div className="grid grid-cols-1 gap-2">
             <StaticImage
@@ -22,7 +35,7 @@ const IntroCard = () => {
                 Thomas Francis
             </h1>
             <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md text-xl mx-10 h-10 shadow-md">
-                <a href="#semblance-us">
+                <a href={resume.allFile.edges[0].node.publicURL} download>
                     Fullstack Web Developer
                 </a>
             </button>
