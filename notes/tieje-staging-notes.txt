@@ -61,7 +61,12 @@ https://tailwindui.com/#product-marketing
 
 3/1/2022
 
-- allow users to download resume
-- Fullstack button directs users to the next section
-- make some nice animation for this website
++ allow users to download resume
+x Fullstack button directs users to the next section
+    + used for downloading resume actually
+x make some nice animation for this website
 
+3/3/2022
+
+This project is officially completed.
+ 
