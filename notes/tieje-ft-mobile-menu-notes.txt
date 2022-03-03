@@ -25,3 +25,4 @@ Sad...
 </div>
 
 I'll just keep things the way they are for now. It's not a big deal.
+I just know the limitations of Gatsby now... Re-rendering is not really Gatsby's thing because it is a static site generator mainly.
