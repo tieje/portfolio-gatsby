@@ -1,2 +1,27 @@
 2/3/2022
 I want to add a menu button for the mobile interface that brings up the sidebar navigation.
+
+I've discovered that I cannot actually re-render components,
+at least not very easily due to Gatsby being a static site generator...
+Sad...
+
+<div
+    className="bg-white w-11 rounded-full fixed top-6 left-4 z-10 grid place-content-center md-invisible"
+    onClick={() => {
+        (visibility === 'invisible') ? setVisibility('visible') : setVisibility('invisible')
+        console.log(visibility)
+    }}
+>
+    <StaticImage
+        src="../images/menu.png"
+        alt="Open menu icons created by ariefstudio - Flaticon"
+        height={20}
+        className="m-3 z-auto"
+        onClick={() => {
+            (visibility === 'invisible') ? setVisibility('visible') : setVisibility('invisible')
+            console.log(visibility)
+        }}
+    />
+</div>
+
+I'll just keep things the way they are for now. It's not a big deal.

@@ -26,7 +26,7 @@ export const SideNavBar = () => {
       }
     `)
     return (
-        <nav className="bg-lightPink fixed left-0 md:w-3/12 w-3/4 h-screen z-10 top-0 md:visible invisible">
+        <nav id="SideNavBar" className="bg-lightPink fixed left-0 md:w-3/12 w-3/4 h-screen z-10 top-0 md:visible invisible">
             <ul className="grid md:gap-4 gap-2 grid-rows content-center h-full px-10">
                 <li className="text-right">
                     <a href="#home">
