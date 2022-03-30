@@ -6,3 +6,7 @@ This says that only pages are allowed under the pages folder.
 Moving files solved the problem, so I'm going to move components folder
 out of the pages folder.
 
+3/29/2022
+
+Added project skill tree to the top.
+

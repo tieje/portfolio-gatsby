@@ -1,5 +1,20 @@
 [
   {
+    "id": 9,
+    "title": "Project Skill Trees",
+    "description": "Although this project is currently in the works, I do post weekly about this project on dev.to. You can check out all of my articles related to this project by clicking the 'Go To Site' button.",
+    "skills": [
+      "Redux",
+      "RTK Query",
+      "React",
+      "Django REST APIs",
+      "PostgreSQL db",
+      "Docker Swarm"
+    ],
+    "link": "https://dev.to/tieje",
+    "image": "../images/skill-tree.png"
+  },
+  {
     "id": 1,
     "title": "semblance.us",
     "description": "The purpose of this project was to encourage people to meet others locally, in-person through the gamification of story archetypes and narrative choices. Although I learned a lot, I am no longer interested in completing this project.",
