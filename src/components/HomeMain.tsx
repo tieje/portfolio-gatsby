@@ -44,8 +44,7 @@ export const HomeMain = () => {
 /* const color: string = randomColors[RandomInt(1,5)]
 */
 const PortfolioProject = ({ node }: { node: jsonNode }) => {
-    const color: string = 'lightBlue'
-    const TopClassNameProperties = "h-screen grid w-screen place-content-center bg-" + color
+    const TopClassNameProperties = "h-screen grid w-screen place-content-center bg-green"
     const idHTMLAttr: string = (node.title) ? CreateIdTag(node.title) : ''
     const description: string = (node.description) ? node.description : ''
     const title: string = (node.title) ? node.title : ''
@@ -54,7 +53,7 @@ const PortfolioProject = ({ node }: { node: jsonNode }) => {
     return (
         <div id={idHTMLAttr} className={TopClassNameProperties}>
             <div className="grid md:gap-4 gap-3 place-content-center px-5 md:px-0 md:max-w-md">
-                <GatsbyImage image={image} alt={title} />
+                <GatsbyImage image={image} alt={title} className='rounded-md'/>
                 <div className="grid justify-center">
                     <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md md:text-xl text-md md:h-10 w-full px-2 shadow-md">
                         <a href={link} title={title}>

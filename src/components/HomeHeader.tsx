@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 export const HomeHeader = () => {
     return (
-        <header id="home" className="grid place-content-center z-0 bg-lightBlue h-screen">
+        <header id="home" className="grid place-content-center z-0 bg-green h-screen">
             <IntroCard />
         </header>
     )
