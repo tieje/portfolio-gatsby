@@ -2,16 +2,16 @@
   {
     "id": 9,
     "title": "Project Skill Trees",
-    "description": "Although this project is currently in the works, I do post weekly about this project on dev.to. You can check out all of my articles related to this project by clicking the 'Go To Site' button.",
+    "description": "I'm currently working on building an SPA where teachers can create skill trees for students. In return, teachers can receive feedback from their students about how confident they feel about a topic. Education is not inherently student-centered. I believe a step in the right direction is to make education a more fun game to play through the use of skill trees.",
     "skills": [
-      "Redux",
-      "RTK Query",
+      "Tailwind CSS",
+      "RTK + RTK Query",
       "React",
       "Django REST APIs",
       "PostgreSQL db",
       "Docker Swarm"
     ],
-    "link": "https://dev.to/tieje",
+    "link": "https://github.com/tieje/skill-tree/tree/staging",
     "image": "../images/skill-tree2.png"
   },
   {
