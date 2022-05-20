@@ -11,8 +11,8 @@
       "PostgreSQL db",
       "Docker Swarm"
     ],
-    "link": "https://github.com/tieje/skill-tree/tree/staging",
-    "image": "../images/skill-tree2.png"
+    "link": "https://www.skyskill.tech/",
+    "image": "../images/skilltree_example.png"
   },
   {
     "id": 1,
