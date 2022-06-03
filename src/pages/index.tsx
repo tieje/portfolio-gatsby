@@ -7,12 +7,12 @@ import { HomeFooter } from '../components/HomeFooter'
 
 const IndexPage = () => {
   return (
-    <body className="scroll-smooth">
+    <div className="scroll-smooth">
       <SideNavBar />
       <HomeHeader />
       <HomeMain />
       <HomeFooter />
-    </body>
+    </div>
   );
 };
 

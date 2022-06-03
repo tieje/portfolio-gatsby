@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+//import { StaticImage } from "gatsby-plugin-image"
 
 export const HomeHeader = () => {
     return (
@@ -26,16 +26,17 @@ const IntroCard = () => {
     return (
         <>
             <div className="grid grid-cols-1 gap-2">
-                <StaticImage
+
+                {/*<StaticImage
                     src="../images/best.jpeg"
                     alt="my_profile"
                     height={500}
                     className="rounded-lg"
-                />
+                    />*/}
                 <h1 className="grid place-content-center text-2xl">
                     Thomas Francis
                 </h1>
-                <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md text-xl mx-10 h-10 shadow-md">
+                <button className="text-white bg-orangeRed opacity-60 hover:opacity-75 rounded-md text-xl mx-10 h-10 shadow-md px-3">
                     <a href={resume.allFile.edges[0].node.publicURL} download>
                         Fullstack Web Developer
                     </a>
