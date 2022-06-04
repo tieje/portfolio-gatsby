@@ -7,7 +7,7 @@ import { HomeFooter } from '../components/HomeFooter'
 
 const IndexPage = () => {
   return (
-    <div className="scroll-smooth">
+    <div className='font-serif overflow-x-hidden'>
       <SideNavBar />
       <HomeHeader />
       <HomeMain />

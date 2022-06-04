@@ -44,7 +44,7 @@ export const HomeMain = () => {
 /* const color: string = randomColors[RandomInt(1,5)]
 */
 const PortfolioProject = ({ node }: { node: jsonNode }) => {
-    const TopClassNameProperties = "h-screen grid w-screen place-content-center bg-green lg:min-h-[700px]"
+    const TopClassNameProperties = "h-screen grid w-screen place-content-center bg-green lg:min-h-[700px"
     const idHTMLAttr: string = (node.title) ? CreateIdTag(node.title) : ''
     const description: string = (node.description) ? node.description : ''
     const title: string = (node.title) ? node.title : ''
