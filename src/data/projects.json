@@ -1,5 +1,20 @@
 [
   {
+    "id": 10,
+    "title": "breadsauce.us - Wedding Site",
+    "description": "Here, I get to show off my animation skills as well as try new tech like the Vite bundler. Vite is ridiculously fast compared to webpack.",
+    "skills": [
+      "Vite",
+      "yarn",
+      "React Spring",
+      "Animxyz",
+      "React",
+      "Tailwind CSS"
+    ],
+    "link": "https://breadsauce.us/",
+    "image": "../images/wedding_site.png"
+  },
+  {
     "id": 9,
     "title": "skyskill.tech - Project Skill Trees",
     "description": "I'm currently working on building an SPA where teachers can create skill trees for students. In return, teachers can receive feedback from their students about how confident they feel about a topic. Education is not inherently student-centered. I believe a step in the right direction is to make education a more fun game to play through the use of skill trees.",
