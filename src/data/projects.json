@@ -16,7 +16,7 @@
   {
     "id": 9,
     "title": "skyskill.tech - Project Skill Trees",
-    "description": "I'm currently working on building an SPA where teachers can create skill trees for students. In return, teachers can receive feedback from their students about how confident they feel about a topic. Education is not inherently student-centered. I believe a step in the right direction is to make education a more fun game to play through the use of skill trees.",
+    "description": "An MVP of an SPA where teachers can create skill trees for students. The application is not complete. In the complete version, teachers would be able receive feedback from their students about how confident they feel about a topic, among many other features. When it comes to making education more student-centered, I believe a step in the right direction is to make it a more fun game to play through the use of skill trees.",
     "skills": [
       "Tailwind CSS",
       "RTK + RTK Query",
