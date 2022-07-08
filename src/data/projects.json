@@ -1,5 +1,18 @@
 [
   {
+    "id": 11,
+    "title": "Portfolio 2.0 - My New Portfolio/Blog Site",
+    "description": "This will be the last project updated for this portfolio site. I'll keep it up just in case people access it from my old resume.",
+    "skills": [
+      "Deno",
+      "Fresh",
+      "TypeScript",
+      "Twind (TailwindCSS)"
+    ],
+    "link": "https://tieje-portfolio-blog-fresh.deno.dev/portfolio",
+    "image": "../images/portfolio-blog-fresh.png"
+  },
+  {
     "id": 10,
     "title": "breadsauce.us - Wedding Site",
     "description": "Here, I get to show off my animation skills as well as try new tech like the Vite bundler. Vite is ridiculously fast compared to webpack.",
@@ -47,7 +60,10 @@
     "id": 2,
     "title": "Smiling School",
     "description": "This is a project for school in which students were tasked with replicating a website designed in Figma and were later asked to add simple functionality.",
-    "skills": ["Bootstrap", "JQuery"],
+    "skills": [
+      "Bootstrap",
+      "JQuery"
+    ],
     "link": "https://github.com/tieje/holberton-smiling-school-javascript",
     "image": "../images/smiling-school.png"
   },
@@ -84,7 +100,10 @@
     "id": 5,
     "title": "Gates of Shell",
     "description": "This is a project for school in which students were tasked with coding a simple unix shell in the C programming language. All functions were made from scratch with a box of scraps.",
-    "skills": ["C", "grit / sheer will"],
+    "skills": [
+      "C",
+      "grit / sheer will"
+    ],
     "link": "https://github.com/nelsfichera/simple_shell/graphs/contributors",
     "image": "../images/simple_shell.jpeg"
   },
@@ -106,7 +125,12 @@
     "id": 7,
     "title": "Simple Lead Generator",
     "description": "The purpose of this script is to provide a GUI for scraping emails, phone numbers, and contact urls from the top result of duckduckgo from a list of business names in an excel sheet. ",
-    "skills": ["PySimpleGUI", "Python", "xlwings", "Selenium"],
+    "skills": [
+      "PySimpleGUI",
+      "Python",
+      "xlwings",
+      "Selenium"
+    ],
     "link": "https://github.com/tieje/Simple-Lead-Generator",
     "image": "../images/lead-generator.png"
   },
